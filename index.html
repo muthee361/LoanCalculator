@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="loan-details">
+                <h2 id="header">Loan Calculator</h2>
+                <div class="amount">
+                    <span class="span">Loan Amount  $</span>
+                    <input type="number" id="loan-amount" class="input-field" placeholder="Loan Amount">
+                </div>
+                <div class="interest">
+                    <span class="span">Interest Rate  %</span>
+                    <input type="number" id="interest" class="input-field" placeholder="Interest Rate">
+                </div>
+                <div class="years">
+                    <span class="span">Years</span>
+                    <input type="number" id="years" class="input-field" placeholder="Years To Repay">
+                </div>
+
+                <div class="calculate">
+                    <button type="button" class="btn" id="calculate">Calculate</button>
+                </div>
+            </div>
+            <!-- Loader -->
+            <div class="loading">
+                <img src="image/loading.gif" alt="">
+            </div>
+
+            <!-- Results  -->
+            <div class="loan-results">
+                <h4>Results</h4>
+                <div class="monthly-payment">
+                    <span class="span">Monthly Payment</span>
+                    <input type="number" id="monthly-payment" class="input-field" disabled>
+                </div>
+                <div class="total-payment">
+                    <span class="span">Total Payment</span>
+                    <input type="number" id="total-payment" class="input-field" disabled>
+                </div>
+                <div class="total-interest">
+                    <span class="span">Total Interest</span>
+                    <input type="number" id="total-interest" class="input-field" disabled>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

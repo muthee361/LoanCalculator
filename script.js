@@ -1,5 +1,4 @@
 
-//listen for click
 
 document.getElementById('calculate').addEventListener('click', function(){
     //hide results
